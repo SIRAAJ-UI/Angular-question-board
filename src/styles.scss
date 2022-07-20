@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.p-treetable .p-treetable-tbody > tr > td {
+    padding:2px;
+}
+
+.p-accordion .p-accordion-content {
+    padding:10px !important;
+}

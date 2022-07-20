@@ -1,0 +1,143 @@
+{
+    "data": [
+        {
+            "chapter": "Diversity in the Living World",
+            "chapterId":"chapter001",
+            "concepts": [
+                {
+                    "name":"The Living World",
+                    "total":0,
+                    "isSelected": false,
+                    "conceptId":"001",
+                    "resetId":"",
+
+                    "marksHolder": 
+                        {
+                            "1":0,
+                            "2":0,
+                            "3":0,
+                            "5":0,
+                            "10":0
+                        },
+                        "options": [
+                            {"data":0,"value":0, "selected":false}, 
+                            {"data":1,"value":1, "selected":false}, 
+                            {"data":2,"value":2, "selected":false}, 
+                            {"data":3,"value":3, "selected":false},
+                            {"data":4,"value":4, "selected":false},
+                            {"data":5,"value":5, "selected":false},
+                            {"data":10,"value":10, "selected":false}
+                        ]
+                },
+                {
+                    "name":"Biological Classification",
+                    "total":0,
+                    "isSelected": false,
+                    "conceptId":"002",
+                    "resetId":"",
+
+                    "marksHolder": 
+                        {
+                            "1":0,
+                            "2":0,
+                            "3":0,
+                            "5":0,
+                            "10":0
+                        },
+                        "options": [
+                            {"data":0,"value":0, "selected":false}, 
+                            {"data":1,"value":1, "selected":false}, 
+                            {"data":2,"value":2, "selected":false}, 
+                            {"data":3,"value":3, "selected":false},
+                            {"data":4,"value":4, "selected":false},
+                            {"data":5,"value":5, "selected":false},
+                            {"data":10,"value":10, "selected":false}
+                        ]
+                },
+                {
+                    "name":"Plant Kingdom",
+                    "total":0,
+                    "isSelected": false,
+                    "conceptId":"003",
+                    "resetId":"",
+
+                    "marksHolder": 
+                        {
+                            "1":0,
+                            "2":0,
+                            "3":0,
+                            "5":0,
+                            "10":0
+                        },
+                        "options": [
+                            {"data":0,"value":0, "selected":false}, 
+                            {"data":1,"value":1, "selected":false}, 
+                            {"data":2,"value":2, "selected":false}, 
+                            {"data":3,"value":3, "selected":false},
+                            {"data":4,"value":4, "selected":false},
+                            {"data":5,"value":5, "selected":false},
+                            {"data":10,"value":10, "selected":false}
+                        ]
+                },
+                {
+                    "name":"Animal Kingdom",
+                    "total":0,
+                    "conceptId":"004",
+                    "resetId":"",
+
+                    "isSelected": false,
+                    "marksHolder": 
+                        {
+                            "1":0,
+                            "2":0,
+                            "3":0,
+                            "5":0,
+                            "10":0
+                        },
+                        "options": [
+                            {"data":0,"value":0, "selected":false}, 
+                            {"data":1,"value":1, "selected":false}, 
+                            {"data":2,"value":2, "selected":false}, 
+                            {"data":3,"value":3, "selected":false},
+                            {"data":4,"value":4, "selected":false},
+                            {"data":5,"value":5, "selected":false},
+                            {"data":10,"value":10, "selected":false}
+                        ]
+                }
+            ],
+            "totalMarks": 0
+        },
+        {
+            "chapter": "Diversity in the Living World",
+            "chapterId":"chapter002",
+            "concepts": [
+                {
+                    "name":"The Living World",
+                    "total":0,
+                    "isSelected": false,
+                    "conceptId":"d001",
+                    "resetId":"",
+                    "marksHolder": 
+                        {
+                            "1":0,
+                            "2":0,
+                            "3":0,
+                            "5":0,
+                            "10":0
+                        },
+                    "options": [
+                        {"data":0,"value":0, "selected":false}, 
+                        {"data":1,"value":1, "selected":false}, 
+                        {"data":2,"value":2, "selected":false}, 
+                        {"data":3,"value":3, "selected":false},
+                        {"data":4,"value":4, "selected":false},
+                        {"data":5,"value":5, "selected":false},
+                        {"data":10,"value":10, "selected":false}
+                    ]
+                    
+                }
+            ],
+            "totalMarks": 0
+        }
+    ]
+}
