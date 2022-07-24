@@ -9,6 +9,7 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NodeService } from './nodeservice'
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     CheckboxModule,
     DropdownModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [NodeService],
   bootstrap: [AppComponent]

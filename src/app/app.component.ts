@@ -15,11 +15,70 @@ export class AppComponent implements OnInit {
   usersForm: FormGroup;
   mainTotal = 0;
 
+  marksHolder = {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "5": 0,
+}
+options = [
+  {
+      "data": 0,
+      "value": 0,
+      "selected": false
+  },
+  {
+      "data": 1,
+      "value": 1,
+      "selected": false
+  },
+  {
+      "data": 2,
+      "value": 2,
+      "selected": false
+  },
+  {
+      "data": 3,
+      "value": 3,
+      "selected": false
+  },
+  {
+      "data": 4,
+      "value": 4,
+      "selected": false
+  },
+  {
+      "data": 5,
+      "value": 5,
+      "selected": false
+  },
+  {
+      "data": 10,
+      "value": 10,
+      "selected": false
+  }
+]
+
   constructor(private nodeService: NodeService) { }
 
 
   ngOnInit() {
-    this.nodeService.getFilesystem().then(files => this.chapter = files);
+    this.nodeService.getFilesystem().then(files => { 
+      files.forEach( (file:any) => {
+        if(file.concepts) {
+          file.concepts.forEach( concept => {
+            console.log(concept)
+            concept.marksHolder = this.marksHolder;
+            concept.options = this.options;
+            concept.isSelected = false;
+            concept.total = 0;
+          })
+        }
+      })
+      // console.log(files)
+
+      this.chapter = files
+     });
   }
 
  
@@ -61,16 +120,16 @@ export class AppComponent implements OnInit {
   onChangebox(chapter,concept,$event) {
     if(concept.isSelected === false) {
        chapter.totalMarks = 0;
+    }
        let filterByChapter = this.chapter.filter( __chapter => { return ( __chapter.chapterId === chapter.chapterId)})
         filterByChapter[0].concepts.forEach( __concept => {
           __concept.marksHolder = {
             "1":0,
             "2":0,
             "3":0,
-            "5":0,
-            "10":0
+            "5":0
         }
-        for(let i=0;i<5;i++) {
+        for(let i=0;i<4;i++) {
           const id = `a${concept.conceptId}-${i}`;
           (<HTMLInputElement>document.getElementById(id)).value = "0"
         }
@@ -80,7 +139,7 @@ export class AppComponent implements OnInit {
           this.checkOverAllMarks();
         }
         })
-    }
+    
   }
 }
 

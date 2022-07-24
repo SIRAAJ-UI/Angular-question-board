@@ -8,3 +8,11 @@
 .p-accordion .p-accordion-content {
     padding:10px !important;
 }
+
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+    padding:8px !important;
+
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

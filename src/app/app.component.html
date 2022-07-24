@@ -1,3 +1,4 @@
+<div style="margin:100px">
 <p-accordion>
   <ng-container *ngFor="let chap of chapter">
     <p-accordionTab header={{chap.chapter}} [selected]="true">
@@ -12,9 +13,8 @@
             </tr>
             <tr>
               <th colspan="2">Concpets</th>
-              <td width="20"><span class="d-flex">{{chap.totalMarks}}</span></td>
+              <td width="20" class="text-center">{{chap.totalMarks}}</td>
               <th width="50">1</th>
-              <th width="50">10</th>
               <th width="50">2</th>
               <th width="50">3</th>
               <th width="50">5</th>
@@ -23,17 +23,22 @@
           </thead>
           <tbody>
             <tr *ngFor="let concept of chap.concepts;">
-              <td colspan="2"><input style="margin-right:10px" type="checkbox" id={{concept.conceptId}} [(ngModel)]="concept.isSelected" (change)="onChangebox(chap,concept,$event)">
-                <label for={{concept.conceptId}} >{{concept.name}}</label>
+              <td colspan="2">
+                <input style="margin-right:10px" type="checkbox" id={{concept.conceptId}} [(ngModel)]="concept.isSelected" (change)="onChangebox(chap,concept,$event)">
+                <label for={{concept.conceptId}} >{{concept.text}}</label>
               </td>
-              <td>{{concept.total}}</td>
+              <td class="text-center"> {{concept.total}}</td>
               <td *ngFor="let smark of concept.marksHolder | keyvalue; trackBy: trackByMethod; let i = index;">
                 <input id=a{{concept.conceptId}}-{{i}} type="number" min="0" max="10" style="width:50px" [value]="0" [disabled]="!concept.isSelected" (change)="onMarkChange(chap,concept,smark.key,$event)">
                 <!-- <select (change)="onMarkChange(chap,concept,smark.key,$event)" [disabled]="!concept.isSelected">
                   <option *ngFor="let option of concept.options" [value]="option.value" [selected]="option.selected">{{option.data}}</option>
                 </select> -->
               </td>
-              <td>view</td>
+              <td>
+                <ng-container *ngIf="concept.isSelected && concept.total > 0">
+                  <a href="#">view</a>
+                </ng-container>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -41,16 +46,17 @@
     </p-accordionTab>
    
   </ng-container>
-    <div class="table-responsive p-4">
+    <div class="table-responsive p-2">
       <table class="table">
         <tbody>
           <tr>
-            <td width="68%">Total Marks</td>
-            <td width="32%">{{mainTotal}}</td>
+              <th colspan="1">Marks</th>
+              <th width="200">{{mainTotal}}</th>
+              <td ></td>
           </tr>
         </tbody>
       </table>
     </div>
-  
 </p-accordion>
+</div>
 
