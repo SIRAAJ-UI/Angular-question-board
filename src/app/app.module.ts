@@ -10,10 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NodeService } from './nodeservice'
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ViewDetailsComponent } from './view-details/view-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ViewDetailsComponent
   ],
   imports: [
     BrowserModule,
