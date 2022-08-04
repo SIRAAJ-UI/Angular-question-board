@@ -1,0 +1,163 @@
+{
+    "data": [
+        {
+            "chapter": "ELECTRIC CHARGE AND ELECTRIC CURRENT",
+            "chapterId":"20645",
+            "concepts": [
+                {
+                    "text":"Dangers of electricity and precautions to be taken",
+                    "conceptId":"22847"
+                },
+                {
+                    "text": "Effects of electric current",
+                    "conceptId": 22845
+                 
+                },
+                {
+                    "text": "Electric charges",
+                    "conceptId": 22842
+                },
+                {
+                    "text": "Electric circuit diagram",
+                    "conceptId": 22844
+                },
+                {
+                    "text": "Electric current",
+                    "conceptId": 22843
+                },
+                {
+                    "text": "Types of current",
+                    "conceptId": 22846
+                  
+                }
+            ],
+            "totalMarks": 0
+        },
+        {
+            "chapter": "FLUIDS",
+            "chapterId":"20644",
+            "concepts": [
+                {
+                    "text": "Archimedes Principle",
+                    "conceptId": 22840
+                },
+                {
+                    "text": "Atmospheric pressure",
+                    "conceptId": 22836
+                },
+                {
+                    "text": "Buoyancy",
+                    "conceptId": 22839
+                },
+                {
+                    "text": "Density",
+                    "conceptId": 22838
+                },
+                {
+                    "text": "Laws of flotation",
+                    "conceptId": 22841
+                },
+                {
+                    "text": "Pascal's Law",
+                    "conceptId": 22837
+                },
+                {
+                    "text": "Pressure in Fluids",
+                    "conceptId": 22835
+                },
+                {
+                    "text": "Thrust and Pressure",
+                    "conceptId": 22834
+                }
+            ]
+        },
+        {
+            "chapter": "ACOUSTICS",
+            "chapterId":"20680",
+            "concepts": [
+                {
+                    "text": "APPLICATIONS REFLECTION OF SOUND",
+                    "conceptId": 23147
+                 
+                },
+                {
+                    "text": "DOPPLER EFFECT",
+                    "conceptId": 23148
+                 
+                },
+                {
+                    "text": "ECHOES",
+                    "conceptId": 23146
+                 
+                },
+                {
+                    "text": "REFLECTION OF SOUND",
+                    "conceptId": 23145
+                 
+                },
+                {
+                    "text": "SOUND WAVES",
+                    "conceptId": 23144
+                 
+                }
+            ]
+        },
+        {
+            "chapter": "ELECTRICITY",
+            "chapterId":"20679",
+            "concepts": [
+                {
+                    "text": "DOMESTIC ELECTRIC CIRCUITS",
+                    "conceptId": 23141
+                },
+                {
+                    "text": "ELECTRIC CIRCUIT",
+                    "conceptId": 23133
+                   
+                },
+                {
+                    "text": "ELECTRIC CURRENT",
+                    "conceptId": 23132
+                   
+                },
+                {
+                    "text": "ELECTRIC POTENTIAL AND POTENTIAL DIFFERENCE",
+                    "conceptId": 23134
+                },
+                {
+                    "text": "ELECTRIC POWER",
+                    "conceptId": 23140
+                },
+                {
+                    "text": "ELECTRICAL RESISTIVITY & ELECTRICAL CONDUCTIVITY",
+                    "conceptId": 23137
+                },
+                {
+                    "text": "HEATING EFFECT OF CURRENT",
+                    "conceptId": 23139
+                },
+                {
+                    "text": "LED BULB",
+                    "conceptId": 23142
+                },
+                {
+                    "text": "LED TELEVISION",
+                    "conceptId": 23143
+                },
+                {
+                    "text": "OHM’S LAW",
+                    "conceptId": 23135
+                },
+                {
+                    "text": "RESISTANCE OF A MATERIAL",
+                    "conceptId": 23136
+                },
+                {
+                    "text": "SYSTEM OF RESISTORS",
+                    "conceptId": 23138
+                }
+            ]
+        }
+       
+    ]
+}

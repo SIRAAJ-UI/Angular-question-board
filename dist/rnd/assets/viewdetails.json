@@ -1,0 +1,149 @@
+{
+    "data":[
+        {
+            "id":1,
+            "mandatory":true,
+            "marks":2,
+            "questionType":"K",
+            "question":"The nucleus of an atom consists of",
+            "solution":[
+                {"question":"The nucleus of an atom consists of"},
+                {
+                    "options": [
+                        {"option":"electrons and neutrons","id":1},
+                        {"option":"electrons and protons","id":2},
+                        {"option":"protons and neutrons","id":3},
+                        {"option":"All of the above","id":4}
+                    ],
+                    "answerKey":2 
+                }
+            ]
+
+        },
+        {
+            "id":2,
+            "mandatory":true,
+            "marks":2,
+            "questionType":"U",
+            "question":"The most electronegative element among the following is",
+            "solution":[
+                {"question":"The most electronegative element among the following is"},
+                {
+                    "options": [
+                        {"option":"sodium","id":1},
+                        {"option":"bromine","id":2},
+                        {"option":"fluorine","id":3},
+                        {"option":"oxygen","id":4}
+                    ],
+                    "answerKey":3
+                }
+            ]
+
+        },
+        {
+            "id":3,
+            "mandatory":false,
+            "marks":2,
+            "questionType":"A",
+            "question":"The metal used to recover copper from a solution of copper sulphate is",
+            "solution":[
+                {"question":"The metal used to recover copper from a solution of copper sulphate is"},
+                {
+                    "options": [
+                        {"option":"Na","id":1},
+                        {"option":"Ag","id":2},
+                        {"option":"Hg","id":3},
+                        {"option":"Fe","id":4}
+                    ],
+                    "answerKey":4
+                }
+            ]
+
+        },
+        {
+            "id":4,
+            "mandatory":false,
+            "marks":2,
+            "questionType":"K",
+            "question":"The number of d-electrons in Fe2+ (Z = 26) is not equal to that of",
+            "solution":[
+                {"question":"The number of d-electrons in Fe2+ (Z = 26) is not equal to that of"},
+                {
+                    "options": [
+                        {"option":"p-electrons in Ne(Z = 10)","id":1},
+                        {"option":"s-electrons in Mg(Z = 12)","id":2},
+                        {"option":"d-electrons in Fe(Z = 26)","id":3},
+                        {"option":"p-electrons in CI(Z = 17)","id":4}
+                    ],
+                    "answerKey":4
+                }
+            ]
+
+        },
+        {
+            "id":5,
+            "mandatory":false,
+            "marks":2,
+            "questionType":"K",
+            "question":"The molecules of which gas have highest speed?",
+            "solution":[
+                {
+                "question":"The molecules of which gas have highest speed?"},
+                {
+                    "options": [
+                        {"option":"H2 at -73oC","id":1},
+                        {"option":"CH4 at 300 K","id":2},
+                        {"option":"N2 at 1,027oC","id":3},
+                        {"option":"O2 at 0oC","id":4}
+                    ],
+                    "answerKey":1
+                }
+            ]
+
+        },
+        {
+            "id":6,
+            "mandatory":false,
+            "marks":2,
+            "questionType":"K",
+            "question":"The oldest rocks in the earth's crust were once molten, and came from deep inside the earth. The molten rock, called magma, spewed out in volcanic eruptions during the earth;s early life and solidified into hard rock's called",
+            "solution":[
+                {
+                    "question":"The oldest rocks in the earth's crust were once molten, and came from deep inside the earth. The molten rock, called magma, spewed out in volcanic eruptions during the earth;s early life and solidified into hard rock's called"},
+                {
+                    "options": [
+                        {"option":"granite","id":1},
+                        {"option":"basalt","id":2},
+                        {"option":"igneous rocks","id":3},
+                        {"option":"sedimentary rocks","id":4}
+                    ],
+                    "answerKey":3
+                }
+            ]
+
+        },
+        {
+            "id":7,
+            "mandatory":false,
+            "marks":2,
+            "questionType":"K",
+            "question":"The law which states that the amount of gas dissolved in a liquid is proportional to its partial pressure is",
+            "solution":[
+                {
+                "question":"The law which states that the amount of gas dissolved in a liquid is proportional to its partial pressure is"},
+                {
+                    "options": [
+                        {"option":"Dalton's law","id":1},
+                        {"option":"Gay Lussac's law","id":2},
+                        {"option":"Henry's law","id":3},
+                        {"option":"Raoult's law","id":4}
+                    ],
+                    "answerKey":3
+                }
+            ]
+
+        }
+
+
+    ]
+}
