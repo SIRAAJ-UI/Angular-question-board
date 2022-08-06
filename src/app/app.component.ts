@@ -91,7 +91,7 @@ export class AppComponent implements OnInit {
     const targetedValue = $event.target.value;
     const filterMarkIndex = concept.marksHolder.find( mark => { return (mark.key === markIndex)});
     filterMarkIndex.mark =  (Number(markIndex) * Number(targetedValue));
-    filterMarkIndex.times =  (Number(markIndex) * Number(targetedValue)) + 4;
+    filterMarkIndex.times =  Number(targetedValue) * 4;
     let total = 0;
     concept.marksHolder.forEach( item => {
       total += Number(item.mark);
@@ -120,12 +120,6 @@ export class AppComponent implements OnInit {
   }
 
   viewQuestions(content,concept) {
-    // concept.markAddedByFour = [];
-    // let markTimes = 0;
-    // for (const item of Object.entries(concept.marksHolder)) {
-    //   markTimes = Number(item[1]) > 0 ? (Number(item[1]) + 4) : 0;
-    //   concept.markAddedByFour.push({mark:item[0],count: markTimes})
-    // }
     this.selectedConcept = concept;
     const modalRef:any = this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title', size:"lg" }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;

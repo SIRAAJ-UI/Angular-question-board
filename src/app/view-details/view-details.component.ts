@@ -28,18 +28,17 @@ export class ViewDetailsComponent implements OnInit {
         finalQuestions.push(this.generateNumberOfQuestions(item));
       }
     })
-    this.details = [].concat.apply([], finalQuestions);
-    this.sourceDetails = [...this.details];
-
+    this.SelectedConcept.details = [].concat.apply([], finalQuestions);
+    this.sourceDetails = [...this.SelectedConcept.details];
   }
 
   onFilterMarks($event:any):any{
     this.marksType = $event.target.value;
     if($event.target.value == 0){
-      this.details = this.sourceDetails;
+      this.SelectedConcept.details = this.sourceDetails;
       return true;
     } 
-    this.details = this.sourceDetails.filter( item => { 
+    this.SelectedConcept.details = this.sourceDetails.filter( item => { 
       if(this.questionType == "0"){
         return (item.markType == $event.target.value)
       } else {
@@ -53,10 +52,10 @@ export class ViewDetailsComponent implements OnInit {
   onFilterByPurpose($event:any):any{
     this.questionType = $event.target.value;
     if($event.target.value == 0){
-      this.details = this.sourceDetails;
+      this.SelectedConcept.details = this.sourceDetails;
       return true;
     } 
-    this.details = this.sourceDetails.filter( item => { 
+    this.SelectedConcept.details = this.sourceDetails.filter( item => { 
       if(this.marksType == '0'){
         return (item.questionType == $event.target.value);
       } else {
@@ -77,7 +76,6 @@ export class ViewDetailsComponent implements OnInit {
       randomQuestion = Math.round(Math.random() * (questionBank.length - 1));
       const mandatory = Math.round(Math.random() * 1);
       randomQType = Math.round(Math.random() * 2);
-      console.log(item);
       generateNewQuestion.push({
         id:Math.round(Math.random()*1000),
         mandatory:_mandatory[mandatory],
@@ -89,7 +87,6 @@ export class ViewDetailsComponent implements OnInit {
       })
     }
     return generateNewQuestion;
-    // this.details = questionBank;
   }
   open(content,solution) {
     this.solution = solution;
