@@ -7,44 +7,50 @@
   </div>
 </ng-template>
 <div style="margin:100px">
+  <div class="table-responsive">
+    <table class="table border">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th width="50">Marks</th>
+          <th width="20" colspan="6" style="text-align: center;" >
+            Number of Marks
+          </th>
+        </tr>
+        <tr>
+          <th colspan="2">Chapters</th>
+          <td width="50"></td>
+          <th width="20">
+            <div style="width:50px;text-align: center;">1</div>
+          <th width="20">
+            <div style="width:50px;text-align: center;">2</div>
+          <th width="20">
+            <div style="width:50px;text-align: center;">3</div>
+          <th width="20">
+            <div style="width:50px;text-align: center;">5</div>
+          <th width="50"></th>
+        </tr>
+      </thead>
+    </table>
+  </div>
   <p-accordion>
     <ng-container *ngFor="let chap of chapter">
       <p-accordionTab header={{chap.chapter}} [selected]="true">
         <div class="table-responsive">
           <table class="table border">
-            <thead>
-              <tr>
-                <th width="10"></th>
-                <th></th>
-                <td width="20">Marks</td>
-                <td colspan="6" class="text-center">Number of questions</td>
-              </tr>
-              <tr>
-                <th colspan="2">Concpets</th>
-                <td width="20" class="text-center">{{chap.totalMarks}}</td>
-                <th width="50">1</th>
-                <th width="50">2</th>
-                <th width="50">3</th>
-                <th width="50">5</th>
-                <th width="50"></th>
-              </tr>
-            </thead>
             <tbody>
               <tr *ngFor="let concept of chap.concepts;">
                 <td colspan="2">
                   <input style="margin-right:10px" type="checkbox" id={{concept.conceptId}} [(ngModel)]="concept.isSelected" (change)="onChangebox(chap,concept,$event)">
                   <label for={{concept.conceptId}} >{{concept.text}}</label>
                 </td>
-                <td class="text-center"> {{concept.total}}</td>
-                <td *ngFor="let mHolder of concept.marksHolder;let i = index;">
+                <td width="50" class="text-center"> {{concept.total}}</td>
+                <td width="20" *ngFor="let mHolder of concept.marksHolder;let i = index;">
                   <input id=a{{concept.conceptId}}-{{i}} type="number" min="0" max="10" style="width:50px" [value]="0" [disabled]="!concept.isSelected" (change)="onMarkChange(chap,concept,mHolder.key,$event)">
                 </td>
-                <!-- <td *ngFor="let smark of concept.marksHolder | keyvalue; trackBy: trackByMethod; let i = index;">
-                  <input id=a{{concept.conceptId}}-{{i}} type="number" min="0" max="10" style="width:50px" [value]="0" [disabled]="!concept.isSelected" (change)="onMarkChange(chap,concept,smark.key,$event)">
-                </td> -->
-                <td>
+                <td width="50">
                   <ng-container *ngIf="concept.isSelected && concept.total > 0">
-                    <a (click)="viewQuestions(content,concept)">view</a>
+                    <a role="button" (click)="viewQuestions(content,concept)">view</a>
                   </ng-container>
                 </td>
               </tr>
@@ -52,20 +58,35 @@
           </table>
         </div>
       </p-accordionTab>
-    
     </ng-container>
-      <div class="table-responsive p-2">
-        <table class="table">
-          <tbody>
-            <tr>
-                <th colspan="1">Marks</th>
-                <th width="200">{{mainTotal}}</th>
-                <td ></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
   </p-accordion>
-</div>
+    <div class="table-responsive">
+      <table class="table border">
+        <thead>
+          <tr>
+            <th colspan="2">Marks</th>
+            <th width="50">{{mainTotal}}</th>
+              <th width="20" *ngFor="let item of indidualMarks | keyvalue">
+                <b>{{item.value}}</b>
+              </th>
+            <th width="50"></th>
 
-<!--  -->
+          </tr>
+          <tr>
+            <th colspan="2"></th>
+            <td width="50"></td>
+            <th width="20">
+              <div style="width:50px;"></div>
+            <th width="20">
+              <div style="width:50px;"></div>
+            <th width="20">
+              <div style="width:50px;"></div>
+            <th width="20">
+              <div style="width:50px;"></div>
+            <th width="50"></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
