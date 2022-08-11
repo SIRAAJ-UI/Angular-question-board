@@ -1,3 +1,4 @@
+<!-- popup start -->
 <ng-template #content let-modal>
   <div class="modal-header d-flex justify-content-between align-items-center">
           <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
@@ -6,7 +7,9 @@
     <app-view-details [SelectedConcept]="selectedConcept"></app-view-details>
   </div>
 </ng-template>
+<!-- end -->
 <div style="margin:100px">
+  <!-- table header start -->
   <div class="table-responsive">
     <table class="table border">
       <thead>
@@ -33,6 +36,9 @@
       </thead>
     </table>
   </div>
+  <!-- table header end -->
+
+  <!-- p-accordion start -->
   <p-accordion>
     <ng-container *ngFor="let chap of chapter">
       <p-accordionTab header={{chap.chapter}} [selected]="true">
@@ -60,33 +66,35 @@
       </p-accordionTab>
     </ng-container>
   </p-accordion>
-    <div class="table-responsive">
-      <table class="table border">
-        <thead>
-          <tr>
-            <th colspan="2">Marks</th>
-            <th width="50">{{mainTotal}}</th>
-              <th width="20" *ngFor="let item of indidualMarks | keyvalue">
-                <b>{{item.value}}</b>
-              </th>
-            <th width="50"></th>
+  <!-- p-accordion end -->
 
-          </tr>
-          <tr>
-            <th colspan="2"></th>
-            <td width="50"></td>
-            <th width="20">
-              <div style="width:50px;"></div>
-            <th width="20">
-              <div style="width:50px;"></div>
-            <th width="20">
-              <div style="width:50px;"></div>
-            <th width="20">
-              <div style="width:50px;"></div>
-            <th width="50"></th>
-          </tr>
-        </thead>
-      </table>
-    </div>
+  <div class="table-responsive">
+    <table class="table border">
+      <thead>
+        <tr>
+          <th colspan="2">Marks</th>
+          <th width="50">{{mainTotal}}</th>
+            <th width="20" *ngFor="let item of indidualMarks | keyvalue">
+              <b>{{item.value}}</b>
+            </th>
+          <th width="50"></th>
+
+        </tr>
+        <tr>
+          <th colspan="2"></th>
+          <td width="50"></td>
+          <th width="20">
+            <div style="width:50px;"></div>
+          <th width="20">
+            <div style="width:50px;"></div>
+          <th width="20">
+            <div style="width:50px;"></div>
+          <th width="20">
+            <div style="width:50px;"></div>
+          <th width="50"></th>
+        </tr>
+      </thead>
+    </table>
+  </div>
   </div>
 

@@ -64,8 +64,6 @@ export class ViewDetailsComponent implements OnInit {
     });
   }
   generateNumberOfQuestions(item) {
-   
-    // console.log(item);
     const questionBank = data.data;
     const generateNewQuestion = [];
     let randomQuestion;
